@@ -907,6 +907,48 @@ body {
 .item-list--value {
   text-align: right;
 }
+
+.item-news-list {
+  text-align: left;
+  margin: 8px 0;
+  position: relative;
+  z-index: 2;
+}
+.item-news-list--item {
+  margin: 3px 8px;
+  line-height: 18px;
+}
+.item-news-list--name,
+{
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bolder;
+  width: 100%;
+}
+.item-news-list--value {
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 0.7em;
+  width: 100%;
+}
+.item-news-list--name {
+  float: left;
+}
+.item-news-list--name .mdi {
+  margin-right: 4px;
+  opacity: 0.8;
+}
+.item-news-list--value {
+  text-align: left;
+}
+
+
 .item-select {
   position: absolute;
   z-index: 7;

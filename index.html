@@ -653,6 +653,23 @@
          </div>
       </div>
 
+      <div ng-if="item.type === TYPES.NEWS_LIST"
+           class="item-entity-container">
+         <div class="item-news-list">
+            <div class="item-news-list--item"
+                 ng-repeat="line in item.list track by $index">
+               <!--<div class="item-news-list--name"> --> 
+                  <!-- <i class="mdi" ng-class="listField('icon', item, line)" ng-if="line.icon"></i> -->
+                  <span class="item-news-list--name" ng-bind="listField('title', item, line)"></span><br/>
+                  <span class="item-news-list--value" ng-bind="listField('value', item, line)"></span>
+               <!-- </div>-->
+               <!--<div class="item-news-list--value">
+                  <span ng-bind="listField('unit', item, line)"></span>
+               </div>-->
+            </div>
+         </div>
+      </div>
+
       <div ng-if="item.type === TYPES.INPUT_NUMBER"
            class="item-entity-container">
          <div>
